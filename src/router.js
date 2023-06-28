@@ -1,11 +1,9 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 
 import Events from './components/Events.vue';
 import Bookings from './components/Bookings.vue';
 // Import other dashboard item components
 
-Vue.use(VueRouter);
 
 const routes = [
     {
@@ -26,8 +24,8 @@ const routes = [
   // Add other routes for dashboard items
 ];
 
-const router = new VueRouter({
-    // history: createWebHistory(),
+const router = createRouter({
+    history: createWebHistory(),
     routes,
 });
 

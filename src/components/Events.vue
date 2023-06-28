@@ -64,7 +64,7 @@
       :title="title"
       :description="description"
       :buttonLabel="buttonLabel"
-      :items="people"
+      :items="events"
       :columns="columns"
     />
   </template>
@@ -75,7 +75,7 @@
   const description = 'All events';
   const buttonLabel = 'Add Event';
   
-  const people = [
+  const events = [
   {
       name: 'Sip and Paint',
       description: 'Front-end Developer',
@@ -98,8 +98,9 @@
   
   const columns = [
     { key: 'name', label: 'Name', className: 'py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0' },
+    { key: 'image', label: 'Image', className: 'py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0' },
     { key: 'description', label: 'Description', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
-    { key: 'status', label: 'Status', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
+    { key: 'price', label: 'Status', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
     { key: 'quantity', label: 'Quantity', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
     { key: 'edit', label: 'Edit', className: 'relative py-3.5 pl-3 pr-4 sm:pr-0' },
   ];

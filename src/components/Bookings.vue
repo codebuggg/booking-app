@@ -10,36 +10,33 @@
   
   <script setup>
   import TableComponent from './TableComponent.vue';
-  const title = 'Events';
-  const description = 'All events';
-  const buttonLabel = 'Add Event';
+  const title = 'Bookings';
+  const description = 'All bookings';
+  const buttonLabel = 'New Booking';
   
   const people = [
   {
-      name: 'Sip and Paint',
-      description: 'Front-end Developer',
-      price: 'ghs 50',
+      client_name: 'Kweku Nimo',
+      email: 'hello@test.com',
+      phone: '0244 444 444',
       date: '12th June, 2023',
-      quantity: '200',
-      image:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      event: 'Sip ans Paint',
     },
     {
-      name: 'Sip and Paint',
-      description: 'Front-end Developer',
-      price: 'ghs 50',
-      date: '12th June, 2023',
-      quantity: '200',
-      image:
-        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+
+        client_name: 'Kweku Nimo',
+        email: 'hello@test.com',
+        phone: '0244 444 444',
+        date: '12th June, 2023',
+        event: 'Sip ans Paint',
     },
   ];
   
   const columns = [
-    { key: 'Clients Name', label: 'Name', className: 'py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0' },
-    { key: 'Email', label: 'Description', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
-    { key: 'Phone', label: 'Status', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
-    { key: 'Event', label: 'Quantity', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
-    { key: 'Date', label: 'Edit', className: 'relative py-3.5 pl-3 pr-4 sm:pr-0' },
+    { key: 'client_name', label: 'Name', className: 'py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0' },
+    { key: 'email', label: 'Email', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
+    { key: 'phone', label: 'Phone', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
+    { key: 'event', label: 'Event', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
+    { key: 'date', label: 'Date', className: 'px-3 py-3.5 text-left text-sm font-semibold text-gray-900' },
   ];
   </script>
